@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#110a34"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root_layout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Contacts"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="@dimen/_270sdp"
+            android:background="@drawable/reg_up"
+            android:hint="Search"
+            android:id="@+id/search"
+            android:singleLine="true"
+            android:alpha="0.5"
+            android:textColorHint="#fff"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/ic_tools_and_utensils"
+            android:drawablePadding="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/qr"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:layout_height="@dimen/_150sdp"/>
+    </RelativeLayout>
+    <include layout="@layout/bottom_sheet_home" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
